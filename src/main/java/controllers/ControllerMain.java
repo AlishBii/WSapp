@@ -70,7 +70,7 @@ public class ControllerMain {
         Document document = Jsoup.connect("https://pokemondb.net/pokedex/all").timeout(6000).get();
         Elements elements = document.select("tbody");
         Iterator var4 = elements.select("tr").iterator();
-        FileWriter writer = new FileWriter("src/main/java/scrappedData/pokemons.txt");
+        FileWriter writer = new FileWriter("pokemons.txt");//src/main/java/scrappedData/
         while(var4.hasNext()) {
             Element el = (Element)var4.next();
             String name = el.select("td.cell-name a").text();

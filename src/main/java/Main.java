@@ -4,14 +4,18 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.io.InputStream;
+
 public class Main extends Application {
     public Main() {
     }
 
     public void start(Stage primaryStage) throws Exception {
         Parent root = (Parent)FXMLLoader.load(this.getClass().getResource("td.fxml"));
-        primaryStage.setTitle("POJO.Pokemon generator");
+        primaryStage.setTitle("Pokemon generator");
         primaryStage.setScene(new Scene(root, 992, 400));
+        /*InputStream in = Main.class.getClassLoader().getResourceAsStream(
+                "src/main/java/scrappedData/pokemons.txt");*/
         primaryStage.show();
 
     }
