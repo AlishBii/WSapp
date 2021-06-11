@@ -52,7 +52,7 @@ public class Controller {
         }*/
         ArrayList pokemons = new ArrayList();
         try {
-            File file = new File("/Users/ainazik/Desktop/last/wsa/src/main/java/scrappedData/pokemons.txt");
+            File file = new File("/Users/alisher/Desktop/last/wsa/src/main/java/scrappedData/pokemons.txt");
             Scanner myReader = new Scanner(file);
             while (myReader.hasNextLine()) {
                 String q = myReader.nextLine();
